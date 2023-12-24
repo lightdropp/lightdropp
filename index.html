@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+        <div class="item-view">
+            <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+            <img class="item-img" src="" alt="An image of a food" width="310" height="310">
+            <div class="name"></div>
+            <div class="separation"></div>
+            <p class="ingredient-list"></p>
+            <div class="separation"></div>
+            <div class="description-div"></div>
+        </div>
+   
+    <div class="adding">
+        <form>
+            <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+
+            <label class="form-label" id="image-label" for="image-file">Image (minimun 300x300)</label>
+            <input required type="file" name="image-file" id="image-file" accept="image/*">
+            
+            <div class="separation"></div>
+            
+                <label class="form-label" for="name">Name :</label>
+                <input required type="text" name="name" id="name" >
+
+            <div class="separation"></div>
+            
+            <label class="form-label" for="ingredients">Ingredients :</label>
+            <textarea required name="ingredients" id="ingredients" cols="20" rows="5"></textarea>
+            
+            <div class="separation"></div>
+
+            <label class="form-label" for="description">Describtion :</label>
+            <textarea required name="description" id="description" cols="20" rows="5"></textarea>
+
+            <button type="submit" class="form-btn">Done</button>
+        </form>
+    </div>
+    <div class="categories">
+        <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+        <div>pizza</div>
+        <div>pizza</div>
+        <div>pizza</div>
+    </div>
+    <section class="section-container">
+        <h1>Retete</h1>
+        <div class="btns">
+            <div class="category-btn-container">
+                <p class="category-btn">Category</p>
+            </div>
+            <div class="adding-btn">Add</div>
+        </div>
+        <div class="recipes">
+        </div>
+    </section>
+</body>
+</html>
